@@ -25,7 +25,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/dns-records@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/dns-records@sha256:bdd911ffbc78c710d0fee1b1ff24cf3b30d9427a6866ff12558476d6442430cd
   platforms: [linux/amd64, linux/arm64]
   command: ["dns-records", "--types", "{types}", "{domain}"]
   output_format: json
